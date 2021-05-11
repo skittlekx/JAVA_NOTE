@@ -27,11 +27,10 @@ decrypt(密文，秘钥) = 明文
 
 **数字签名技术：** 数字签名建立在公钥加密体制基础上，是公钥加密技术的另一类应用。它把公钥加密技术和数字摘要结合起来，形成了实用的数字签名技术。
 
-![](https://github.com/skittlekx/JAVA_NOTE/blob/2843a11c1ac776b3c061c97ad427660aad97b820/img/https%E9%AA%8C%E8%AF%81%E6%96%87%E4%BB%B6.png)
-
+![](https://github.com/skittlekx/JAVA_NOTE/blob/2843a11c1ac776b3c061c97ad427660aad97b820/img/https%E9%AA%8C%E8%AF%81%E6%96%87%E4%BB%B6.png?raw=true)
 ## https建立连接过程
 
-![](https://github.com/skittlekx/JAVA_NOTE/blob/2843a11c1ac776b3c061c97ad427660aad97b820/img/https%E8%BF%9E%E6%8E%A5%E8%BF%87%E7%A8%8B.png)
+![](https://github.com/skittlekx/JAVA_NOTE/blob/2843a11c1ac776b3c061c97ad427660aad97b820/img/https%E8%BF%9E%E6%8E%A5%E8%BF%87%E7%A8%8B.png?raw=true)
 
 1. client向server发送请求然后连接到server，发送的信息主要是**随机值1**和客户端支持的加密算法。
 2. server接收到信息之后给予client响应握手信息，包括**随机值2**和匹配好的协商加密算法，这个加密算法一定是client发送给server加密算法的子集。
@@ -46,7 +45,7 @@ decrypt(密文，秘钥) = 明文
 
 ## 安全问题
 
-![](https://github.com/skittlekx/JAVA_NOTE/blob/2843a11c1ac776b3c061c97ad427660aad97b820/img/https%E8%BF%9E%E6%8E%A5%E8%BF%87%E7%A8%8B%EF%BC%88%E9%BB%91%E5%AE%A2%EF%BC%89.png)
+![](https://github.com/skittlekx/JAVA_NOTE/blob/2843a11c1ac776b3c061c97ad427660aad97b820/img/https%E8%BF%9E%E6%8E%A5%E8%BF%87%E7%A8%8B%EF%BC%88%E9%BB%91%E5%AE%A2%EF%BC%89.png?raw=true)
 
 
 - 获取公钥
@@ -65,7 +64,7 @@ decrypt(密文，秘钥) = 明文
 
 我们把证书原本的内容生成一份“签名”，比对证书内容和签名是否一致就能判别是否被篡改。这就是数字证书的“防伪技术”，这里的“签名”就叫**数字签名**。
 
-![](https://github.com/skittlekx/JAVA_NOTE/blob/2843a11c1ac776b3c061c97ad427660aad97b820/img/%E6%95%B0%E5%AD%97%E7%AD%BE%E5%90%8D%E7%94%9F%E6%88%90%E4%B8%8E%E9%AA%8C%E8%AF%81.jpg)
+![](https://github.com/skittlekx/JAVA_NOTE/blob/2843a11c1ac776b3c061c97ad427660aad97b820/img/%E6%95%B0%E5%AD%97%E7%AD%BE%E5%90%8D%E7%94%9F%E6%88%90%E4%B8%8E%E9%AA%8C%E8%AF%81.jpg?raw=true)
 
 **数字签名的制作过程：**
 
